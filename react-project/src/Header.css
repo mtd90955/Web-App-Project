@@ -1,0 +1,12 @@
+.header {
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    text-align: center;
+    height: 10%;
+}
+
+.log-in {
+    margin: auto;
+}

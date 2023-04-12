@@ -1,0 +1,13 @@
+.button {
+    background-color: lightblue;
+    width: 10%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar {
+    width: 50%;
+    margin: 10% auto;
+}
