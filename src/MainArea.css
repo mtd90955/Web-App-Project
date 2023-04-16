@@ -1,0 +1,18 @@
+.MainArea-main-div {
+   height: 85vh;
+
+   background-image: url('../public/images/main-area-static-1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   /*align-items: center;*/
+
+
+      
+    
+   ;
+}

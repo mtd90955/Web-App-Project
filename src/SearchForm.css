@@ -1,0 +1,21 @@
+.search-bar {
+
+   display: inline-flex;
+   max-width: 80%;
+
+   background-color: wheat;
+}
+
+.search-button {
+   background-image: url('../public/images/search-icon-1.png');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   width: 15%;
+
+}
+
+.search-input {
+   width: 85%;
+}

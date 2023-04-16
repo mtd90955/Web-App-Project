@@ -1,0 +1,44 @@
+.Center-main-div {
+   background-color: #282c34;
+   color: wheat;
+   width: 70%;
+
+   background-image: url('../public/images/main-area-static-1.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+
+   overflow: hidden;
+}
+
+.my-div {
+   height: 0;
+   width: 70%;
+   overflow: hidden;
+   transition: height 0.5s;
+
+   position: absolute;
+
+   /*background-color: gainsboro;*/
+
+   z-index: 2;
+
+
+ }
+ 
+ .my-div.visible {
+   height: 85vh;
+   width: 70%;
+   position: absolute;
+
+   /*background-color: gainsboro;*/
+
+   overflow: hidden;
+
+   z-index: 2;
+
+
+ }
+
+
+ 

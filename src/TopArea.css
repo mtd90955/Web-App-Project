@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+
+.TopArea-main-div {
+   /*background-color: aquamarine;*/
+   padding: 0px;
+   height: 10vh;
+   /*background-image: url('../public/images/top-area-1.jpg');*/
+   background-image: url('../public/images/arctic-nebula-horizontal-7.jpg');
+   background-position: top;
+   background-repeat: no-repeat;
+   background-size: 100% auto;
+
+   
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.diane {
+   max-width: 90%; 
+   max-height: 90%;
+
+   margin: 5px 10px 5px 20px;
+}
+
+.title {
+   padding: 0;
+   margin: 0;
+
+   padding-top: 5px;
+   padding-bottom: 10px;
+   font-family: "Orbitron";
+}

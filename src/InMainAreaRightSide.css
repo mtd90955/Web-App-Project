@@ -1,0 +1,11 @@
+.RightSide-main-div {
+   background-color: #282c34;
+   color: wheat;
+   width: 20%;
+
+   background-image: url('../public/images/arctic-metal-4.jpg');
+   background-position: center;
+   background-repeat: no-repeat;
+   /*background-size: cover;*/
+   background-size: 100% 100%;
+}

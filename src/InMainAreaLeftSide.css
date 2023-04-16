@@ -1,0 +1,17 @@
+.LeftSide-main-div {
+   background-color: #282c34;
+   color: wheat;
+   width: 10%;
+
+   background-image: url('../public/images/metal-stripe-vertical-5.png');
+   /*background-image: url('../public/images/arctic-metal-6.jpg');*/
+   background-position: center;
+   background-repeat: no-repeat;
+   /*background-size: cover;*/
+   background-size: auto 100%;
+
+}
+
+.add-button {
+   
+}

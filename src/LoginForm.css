@@ -1,0 +1,23 @@
+.login-form-div {
+   color: rgb(0, 0, 0);
+   
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+/*
+   background-image: url('../public/images/login-door-6.jpg');
+   /*background-image: url('../public/images/arctic-metal-6.jpg');*/
+  /*
+   background-position: left;
+   background-repeat: no-repeat;
+   background-size:cover;
+*/
+   background: rgba(255, 255, 255, 0.205);
+   border-radius: 10px;
+   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.131);
+   backdrop-filter: blur(10px);
+   -webkit-backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.12);
+
+}
