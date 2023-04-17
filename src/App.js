@@ -8,33 +8,50 @@ import { useState } from 'react';
 
 function App() {
 
+  // FOR THE LOGIN BUTTON
   const [isVisible, slideDown] = useState(false);
 
   const handleClick = () => {
     slideDown(!isVisible);
   };
 
+  const handleClick2 = () => {
+    slideDown(!isVisible);
+  };
+
+  // FOR THE SUBMIT LOGIN BUTTON
+  const [isLoggedIn, changeText] = useState(false);
+
+  const handleLoginClick = () => {
+    changeText(!isLoggedIn);
+  };
+
+  // FOR THE ADD BUTTON
+  const [isLeftWindowVisible, slideRight] = useState(false);
+
+  const handleAddClick = () => {
+    slideRight(!isLeftWindowVisible);
+  }
+
+  // FOR THE DELETE BUTTON
+  const [isDeleteWindowVisible, slideRightDelete] = useState(false);
+
+  const handleDeleteClick = () => {
+    slideRightDelete(!isDeleteWindowVisible);
+  }
+
+
   return (
     <div className="App">
       <div className="App-body">
-        {/*
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
         
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-       */}
-      <TopArea handleClick={handleClick}/>
+      <TopArea handleClick={handleClick} isLoggedIn={isLoggedIn}/>
       <MarqueeArea />
-      <MainArea isVisible={isVisible}/>
+      <MainArea isVisible={isVisible} 
+                handleAddClick={handleAddClick} isLeftWindowVisible={isLeftWindowVisible}
+                handleDeleteClick={handleDeleteClick} isDeleteWindowVisible={isDeleteWindowVisible}
+                handleLoginClick={handleLoginClick}
+                handleClick2={handleClick2}/>
 
       </div>
     </div>

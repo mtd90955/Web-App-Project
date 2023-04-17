@@ -1,0 +1,61 @@
+.main-music-div {
+   min-width: 110px;
+   min-height: 150px;
+   background-color: red;
+   border: 10px white;
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+
+   border-radius: 20%;
+   z-index: 5;
+   padding: 10%;
+   padding-bottom: 0;
+
+   background-image: url(../public/images/bach-sunglasses.jpg);
+   background-position: center;
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+
+   box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.5), 
+              0 0 6px rgba(0, 0, 0, 0.5), 
+              6px 6px 10px rgba(0, 0, 0, 0.5) inset;
+
+   overflow: hidden;
+}
+
+.main-music-div {
+   
+   transition: transform 0.3s ease-in-out;
+ }
+ 
+ .main-music-div:hover {
+   transform: scale(1.1);
+ }
+
+.main-music-div * {
+   margin: 0;
+   padding: 7px;
+}
+
+.main-music-div p {
+   text-shadow: 1px 1px 0 #171717,
+             1px 1px 0 #363636,
+             1px 1px 0 #3b3b3b;
+
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.play-button {
+   width: 130%;
+   position: relative;
+   bottom: 0;
+   /*background-color: rgb(240, 248, 255);*/
+   transition: transform 0.3s ease-in-out;
+}
+
+.play-button:hover {
+   
+   transform: scale(1.1);
+}

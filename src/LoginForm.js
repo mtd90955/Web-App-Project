@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './LoginForm.css';
 
-function LoginForm() {
+function LoginForm(props) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -18,6 +18,11 @@ function LoginForm() {
     console.log(`Username: ${username}\nPassword: ${password}`);
   };
 
+  function handleTwoInOne() {
+    props.handleLoginClick();
+    props.handleClick2();
+  }
+
   return (
    <div className="login-form-div">
     <form onSubmit={handleSubmit}>
@@ -31,7 +36,7 @@ function LoginForm() {
         <input type="password" value={password} onChange={handlePasswordChange} />
       </label>
       <br />
-      <button type="submit">Login</button>
+      <button type="submit" onClick={handleTwoInOne}>Login</button>
     </form>
     </div>
   );

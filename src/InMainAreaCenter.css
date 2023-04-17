@@ -3,12 +3,15 @@
    color: wheat;
    width: 70%;
 
+
    background-image: url('../public/images/main-area-static-1.jpg');
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
 
    overflow: hidden;
+
+
 }
 
 .my-div {
@@ -21,7 +24,7 @@
 
    /*background-color: gainsboro;*/
 
-   z-index: 2;
+   z-index: 10;
 
 
  }
@@ -35,10 +38,60 @@
 
    overflow: hidden;
 
-   z-index: 2;
+   z-index: 10;
 
 
  }
 
+ .my-div-2 {
+   height: 85%;
+   width: 0%;
+   overflow: hidden;
+   transition: width 0.5s;
 
+   position: absolute;
+
+   z-index: 10;
+ }
  
+ .my-div-2.visible {
+   height: 85vh;
+   width: 70%;
+   position: absolute;
+
+   overflow: hidden;
+
+   z-index: 10;
+ }
+
+.music-area-div {
+   position: absolute;
+
+   display: grid;
+   grid-template-columns: auto auto auto;
+   /*background-color: #2196F3;*/
+   padding: 2%;
+
+   z-index: 4;
+}
+
+.my-div-3 {
+  height: 85%;
+  width: 0%;
+  overflow: hidden;
+  transition: width 0.5s;
+
+  position: absolute;
+
+  z-index: 10;
+}
+
+.my-div-3.visible {
+  height: 85vh;
+  width: 70%;
+  position: absolute;
+
+  overflow: hidden;
+
+  z-index: 10;
+}

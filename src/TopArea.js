@@ -9,7 +9,7 @@ function TopArea(props) {
      <div className = "TopArea-main-div">
         <img src="../images/diane-1.png" alt="professor" className='diane' />
         <h1 className="title">MAM</h1>
-        <LoginButton onClick={props.handleClick} label="Login" />
+        <LoginButton onClick={props.handleClick} isLoggedIn={props.isLoggedIn}/>
      </div>
    );
  }

@@ -7,10 +7,14 @@ import BackgroundVideo from './BackgroundVideo';
 function MainArea(props) {
    return (
      <div className="MainArea-main-div">
-      <InMainAreaLeftSide />
+      <InMainAreaLeftSide handleAddClick={props.handleAddClick} 
+                          handleDeleteClick={props.handleDeleteClick}/>
 
       {/*<BackgroundVideo />*/}
-      <InMainAreaCenter isVisible={props.isVisible}/>
+      <InMainAreaCenter isVisible={props.isVisible} isLeftWindowVisible={props.isLeftWindowVisible}
+                        isDeleteWindowVisible={props.isDeleteWindowVisible}
+                        handleLoginClick={props.handleLoginClick}
+                        handleClick2={props.handleClick2}/>
 
       <InMainAreaRightSide />      
      </div>
